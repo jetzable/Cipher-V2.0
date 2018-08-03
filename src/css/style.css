@@ -1,0 +1,33 @@
+/* Cipher Style */
+
+#originalMessage{
+    background-color: #20CCC0;
+    border-radius: 7%;
+    padding: 2em;
+}
+::placeholder{
+    color: aliceblue;
+    padding: .4em;
+    margin-left: .5em;
+    font-size: 1em;
+}
+
+#offset{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    -webkit-box-shadow: 10px 9px 32px 5px rgba(166,166,166,1);
+    -moz-box-shadow: 10px 9px 32px 5px rgba(166,166,166,1);
+    box-shadow: 10px 9px 32px 5px rgba(166,166,166,1);
+}
+
+input::placeholder{
+    color: #555354;
+}
+#cipher-button{
+    background-color: #20CCC0;
+}
+
+#decipher-button{
+    background-color: #555354;
+}
