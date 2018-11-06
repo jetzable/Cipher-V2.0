@@ -2,55 +2,55 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/style.css">
-    <title>i.Spy</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>i.Spy</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-          <header class="col-md-12">
-            <div class="text-center display-1">
-                <span>i.Spy</span>
-            </div>
-          </header>
-          <div class="form col-md-12 text-center display-4">
-            <p>Cifra tus mensajes y usa tu propia clave secreta.</p>
-          </div>
-            <div class="col-12 col-md-6">
-                <button id="cipher-button" class="btn btn-primary col-md-8"> <span>Cifra Tu Mensaje</span> </button>
-            </div>
-            <div class="col-12 col-md-6">
-                <button id="decipher-button" class="btn btn-primary col-md-8"> <span>Descifra Tu Mensaje</span> </button>
-            </div>
-            <div class="col-12 col-md-12 text-center">
-              <div>
-                <input type="number" name="cipherKey" id="offset" placeholder="Clave: ">
-              </div>
-            <div>
-              <textarea name="originalInput" id="originalMessage" placeholder="Escribe tu Mensaje: " cols="30" rows="15"></textarea>
-            </div>
-          </div>
-            <footer class="col-md-12">
-                <span class="bottom-bar col-md-12">Developed by Palmidia Garay | Laboratoria Project 1 - Cipher </span>
-            </footer>
-        </div>
+  <header class="col-md-12">
+    <div class="text-center display-3">
+      <span>i.Spy</span>
+      <p class="mt-2">Cifra tu mensaje usando tu propia clave.</p>
     </div>
-    <!-- Adding scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+  </header>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-6 col-sm-12">
+        <textarea name="originalMessage" id="originalMessage" cols="30" rows="9" placeholder="Escribe tu Mensaje: "
+          class="mt-4"></textarea>
+      </div>
+      <div class="col-md-6 col-sm-12 btn-area">
+        <div class="form">
+          <input type="number" name="cipherKey" id="offset" placeholder="Clave: " class="text-center">
+        </div>
+        <div class="btn-group mt-4">
+          <button class="btn" id="cipher-button">Cifrar</button>
+          <button class="btn" id="decipher-button">Descifrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adding scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="/js/cipher.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
